@@ -11,6 +11,7 @@ CHORDS = {
     "IV": [65, 69, 72],    # F major (F, A, C)
     "V": [67, 71, 74],     # G major (G, B, D)
     "vi": [69, 72, 76],    # A minor (A, C, E)
+    "vii": [71, 74, 77]     # B diminished (B, D, F)
 }
 
 # 🎶 Note durations at 120 BPM

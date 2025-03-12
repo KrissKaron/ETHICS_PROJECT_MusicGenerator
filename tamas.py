@@ -3,21 +3,23 @@ import random
 
 # 🎵 Valid chord transitions
 valid_progression = {
-    "I": ["I", "ii", "iii", "IV", "V", "vi"],
-    "ii": ["V", "IV", "iii"],
-    "iii": ["I", "ii", "IV", "vi"],
-    "IV": ["I", "iii", "V", "vi"],
-    "V": ["I", "IV", "vi"],
-    "vi": ["I", "ii", "IV", "V"]
+    "I": ["I", "ii", "iii", "IV", "V", "vi", "vii"],
+    "ii": ["V", "IV", "iii", "vii"],
+    "iii": ["I", "ii", "IV", "vi", "vii"],
+    "IV": ["I", "iii", "V", "vi", "vii"],
+    "V": ["I", "IV", "vi", "vii"],
+    "vi": ["I", "ii", "IV", "V", "vii"],
+    "vii": ["I", "iii", "vi"]  # vii typically resolves to I or iii in major keys
 }
 
 # 🎶 Popular progressions (for fitness bonus)
 POPULAR_PROGRESSIONS = [
-    ["I", "V", "vi", "VI"],
+    ["I", "V", "vi", "vii"],
     ["I", "V", "vi", "iii", "IV"],
-    ["vi", "V", "IV", "V"],
-    ["I", "vi", "IV", "V"],
-    ["I", "IV", "vi", "V"]
+    ["vi", "V", "IV", "vii"],
+    ["I", "vi", "IV", "vii"],
+    ["I", "IV", "vi", "vii"],
+    ["vii", "I", "V", "vi"]  # New progression showcasing vii resolution
 ]
 
 # 🎸 Individual (Chord Progression)
